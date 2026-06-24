@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Iosef",
+    "subtitle": "Full Stack Developer",
+    "roles": ["Junior Developer", "Learning React", "Exploring Node.js", "Tech enthusiast"],
+    "cv": "View Resume",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "bio1": "My name is Iosef Suárez Gil, I'm a Full Stack web developer and graduate of 6th grade Computer Science. I specialize in building modern web applications using React, Node.js, Express and MongoDB.",
+    "bio2": "Since I started programming, I've been passionate about solving problems and building digital experiences that make a difference. Every project is an opportunity to learn something new and push my own limits.",
+    "bio3": "I'm constantly learning, exploring new technologies and looking for challenges that help me grow as a developer. My goal is to deliver real, quality solutions to every project I work on.",
+    "techTitle": "Technologies",
+    "stats": {
+      "projects": "Projects",
+      "technologies": "Technologies",
+      "experience": "Experience",
+      "commits": "Commits"
+    },
+    "downloadCv": "Download CV",
+    "timelineTitle": "Education",
+    "timeline": [
+      {
+        "year": "2020 - 2026",
+        "title": "Centro Educativo Técnico Laboral Kinal",
+        "desc": "From 1st grade to 6th grade Computer Science. Technical training in programming, networking and software development."
+      },
+      {
+        "year": "2014 - 2018",
+        "title": "Colegio Italiano de Guatemala",
+        "desc": "From 3rd to 6th grade elementary."
+      },
+      {
+        "year": "2012 - 2013",
+        "title": "Colegio Bentham",
+        "desc": "1st and 2nd grade elementary. Start of my academic education."
+      }
+    ],
+    "skills": [
+      { "name": "React", "level": 80, "category": "frontend" },
+      { "name": "JavaScript", "level": 85, "category": "frontend" },
+      { "name": "HTML", "level": 90, "category": "frontend" },
+      { "name": "CSS", "level": 80, "category": "frontend" },
+      { "name": "Tailwind CSS", "level": 75, "category": "frontend" },
+      { "name": "Node.js", "level": 70, "category": "backend" },
+      { "name": "Express", "level": 70, "category": "backend" },
+      { "name": "MongoDB", "level": 65, "category": "backend" },
+      { "name": "Git", "level": 75, "category": "tools" },
+      { "name": "GitHub", "level": 75, "category": "tools" }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View project",
+    "viewCode": "Code",
+    "items": [
+      {
+        "title": "Client-admin",
+        "desc": "Complete admin panel for managing sports fields, reservations, tournaments and teams. Includes React + Tailwind frontend and Node.js + .NET backend.",
+        "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
+        "url": "https://github.com/SuarezGil/Client-admin"
+      },
+      {
+        "title": "client-user",
+        "desc": "React Native (Expo) mobile app for Kinal Sport users, with authentication, navigation, and integrated backend services.",
+        "tags": ["React Native", "Expo", "Node.js", ".NET"],
+        "url": "https://github.com/SuarezGil/client-user"
+      },
+      {
+        "title": "GestorDeOpiniones",
+        "desc": "REST API for managing publications and comments with JWT authentication, Cloudinary file uploads and MongoDB database.",
+        "tags": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
+        "url": "https://github.com/SuarezGil/GestorDeOpiniones"
+      },
+      {
+        "title": "frontDivisas",
+        "desc": "Minimal currency converter built with React and Vite, consuming an external exchange rate API.",
+        "tags": ["React", "Vite", "JavaScript"],
+        "url": "https://github.com/SuarezGil/frontDivisas"
+      },
+      {
+        "title": "Portfolio Website",
+        "desc": "Personal portfolio built with React, Tailwind CSS and Framer Motion, with responsive design, dark mode and bilingual support.",
+        "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
+        "url": "https://github.com/SuarezGil/Portafolio-web"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "There was an error sending your message. Try again."
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "iossg8@gmail.com",
+      "phone": "+502 5317-0347",
+      "location": "Guatemala"
+    },
+    "modal": {
+      "title": "Contact",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "madeWith": "Made with"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "lang": {
+    "switch": "ES"
+  }
+}

@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #38bdf8;
+  --color-primary-dark: #0284c7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-slate-950 dark:text-white transition-colors duration-300;
+}
+
+::selection {
+  @apply bg-sky-400/30;
+}

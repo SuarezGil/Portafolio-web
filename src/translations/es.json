@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Iosef",
+    "subtitle": "Desarrollador Full Stack",
+    "roles": ["Desarrollador Junior", "Aprendiendo React", "Explorando Node.js", "Apasionado por la tecnología"],
+    "cv": "Ver Curriculum",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "bio1": "Mi nombre es Iosef Suárez Gil, soy desarrollador web Full Stack y graduado de 6to Perito en Informática. Me especializo en crear aplicaciones web modernas usando React, Node.js, Express y MongoDB.",
+    "bio2": "Desde que empecé en el mundo de la programación, me apasiona resolver problemas y construir experiencias digitales que marquen la diferencia. Cada proyecto es una oportunidad para aprender algo nuevo y superar mis propios límites.",
+    "bio3": "Actualmente sigo formándome constantemente, explorando nuevas tecnologías y buscando desafíos que me permitan crecer como desarrollador. Mi objetivo es aportar soluciones reales y de calidad a cada proyecto en el que participo.",
+    "techTitle": "Tecnologías",
+    "stats": {
+      "projects": "Proyectos",
+      "technologies": "Tecnologías",
+      "experience": "Experiencia",
+      "commits": "Commits"
+    },
+    "downloadCv": "Descargar CV",
+    "timelineTitle": "Formación",
+    "timeline": [
+      {
+        "year": "2020 - 2026",
+        "title": "Centro Educativo Técnico Laboral Kinal",
+        "desc": "De 1ro básico a 6to Perito en Informática. Formación técnica en programación, redes y desarrollo de software."
+      },
+      {
+        "year": "2014 - 2018",
+        "title": "Colegio Italiano de Guatemala",
+        "desc": "De 3ro a 6to primaria."
+      },
+      {
+        "year": "2012 - 2013",
+        "title": "Colegio Bentham",
+        "desc": "1ro y 2do primaria. Inicio de mi formación académica."
+      }
+    ],
+    "skills": [
+      { "name": "React", "level": 80, "category": "frontend" },
+      { "name": "JavaScript", "level": 85, "category": "frontend" },
+      { "name": "HTML", "level": 90, "category": "frontend" },
+      { "name": "CSS", "level": 80, "category": "frontend" },
+      { "name": "Tailwind CSS", "level": 75, "category": "frontend" },
+      { "name": "Node.js", "level": 70, "category": "backend" },
+      { "name": "Express", "level": 70, "category": "backend" },
+      { "name": "MongoDB", "level": 65, "category": "backend" },
+      { "name": "Git", "level": 75, "category": "tools" },
+      { "name": "GitHub", "level": 75, "category": "tools" }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver proyecto",
+    "viewCode": "Código",
+    "items": [
+      {
+        "title": "Client-admin",
+        "desc": "Panel de administración completo para gestión de canchas, reservas, torneos y equipos deportivos. Incluye frontend con React + Tailwind y backend con Node.js y .NET.",
+        "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
+        "url": "https://github.com/SuarezGil/Client-admin"
+      },
+      {
+        "title": "client-user",
+        "desc": "App móvil en React Native (Expo) para usuarios de Kinal Sport, con autenticación, navegación y servicios backend integrados.",
+        "tags": ["React Native", "Expo", "Node.js", ".NET"],
+        "url": "https://github.com/SuarezGil/client-user"
+      },
+      {
+        "title": "GestorDeOpiniones",
+        "desc": "API REST para gestión de publicaciones y comentarios con autenticación JWT, subida de archivos a Cloudinary y base de datos MongoDB.",
+        "tags": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
+        "url": "https://github.com/SuarezGil/GestorDeOpiniones"
+      },
+      {
+        "title": "frontDivisas",
+        "desc": "Conversor de divisas minimalista construido con React y Vite, consumiendo API externa de tasas de cambio.",
+        "tags": ["React", "Vite", "JavaScript"],
+        "url": "https://github.com/SuarezGil/frontDivisas"
+      },
+      {
+        "title": "Portafolio Web",
+        "desc": "Este portafolio personal construido con React, Tailwind CSS y Framer Motion, con diseño responsive, modo oscuro y bilingüe.",
+        "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
+        "url": "https://github.com/SuarezGil/Portafolio-web"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Hubo un error al enviar el mensaje. Intenta de nuevo."
+    },
+    "info": {
+      "title": "Información de contacto",
+      "email": "iossg8@gmail.com",
+      "phone": "+502 5317-0347",
+      "location": "Guatemala"
+    },
+    "modal": {
+      "title": "Contacto",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "location": "Ubicación",
+      "close": "Cerrar"
+    }
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados",
+    "madeWith": "Hecho con"
+  },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "lang": {
+    "switch": "EN"
+  }
+}
