@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './NavBar'
 import Footer from './Footer'
-import WhatsAppButton from './WhatsAppButton'
 
 const Hero = lazy(() => import('./Hero'))
 const About = lazy(() => import('./About'))
@@ -38,7 +37,6 @@ function App() {
         </main>
 
         <Footer />
-        <WhatsAppButton />
       </div>
     </div>
   )

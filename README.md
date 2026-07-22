@@ -1,16 +1,18 @@
-# React + Vite
+# Portafolio de Iosef Suárez Gil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Monorepo con dos servicios independientes:
 
-Currently, two official plugins are available:
+- [`apps/frontend`](apps/frontend) — sitio en React + Vite.
+- [`apps/backend`](apps/backend) — servicio Express que envía el formulario de contacto por correo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Cada servicio se despliega por separado (Dockerfile propio, `.env` propio). Ver el `README.md`
+de cada carpeta para su configuración específica.
 
-## React Compiler
+## Desarrollo local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+pnpm install
+pnpm dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Levanta el frontend en `http://localhost:5173` y el backend en `http://localhost:4000` en paralelo.

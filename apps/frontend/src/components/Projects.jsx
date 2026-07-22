@@ -45,16 +45,6 @@ export default function Projects() {
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5">
               {proj.desc}
             </p>
-            <div className="flex flex-wrap gap-2 mb-5">
-              {proj.tags?.map((tag, j) => (
-                <span
-                  key={j}
-                  className="text-xs px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
             <div className="flex gap-4">
               <a
                 href={proj.url}

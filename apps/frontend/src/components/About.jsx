@@ -2,7 +2,7 @@ import Foto from '../assets/yo.jpg'
 import cv from '../assets/CURRICULUM IOSEF SUAREZ GIL 2026.pdf'
 import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
-import { FiDownload, FiFolder, FiCode, FiCalendar, FiGithub } from 'react-icons/fi'
+import { FiDownload } from 'react-icons/fi'
 import {
   SiReact, SiNodedotjs, SiExpress, SiMongodb, SiJavascript,
   SiHtml5, SiCss, SiTailwindcss, SiGit, SiGithub as SiGithubIcon,
@@ -80,13 +80,6 @@ export default function About() {
   const skills = t('about.skills')
   const timeline = t('about.timeline')
 
-  const stats = [
-    { icon: FiFolder, value: '5+', label: t('about.stats.projects') },
-    { icon: FiCode, value: '10+', label: t('about.stats.technologies') },
-    { icon: FiCalendar, value: '3', label: t('about.stats.experience') },
-    { icon: FiGithub, value: '30+', label: t('about.stats.commits') },
-  ]
-
   const categories = ['frontend', 'backend', 'tools']
 
   return (
@@ -162,22 +155,6 @@ export default function About() {
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-sky-400 relative shadow-xl group-hover:scale-105 transition duration-500"
               />
             </motion.div>
-
-            <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
-              {stats.map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.8 + i * 0.15 }}
-                  className="flex flex-col items-center p-3 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10"
-                >
-                  <stat.icon className="text-sky-400 mb-1" size={18} />
-                  <span className="text-lg font-bold text-gray-900 dark:text-white">{stat.value}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">{stat.label}</span>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </motion.div>

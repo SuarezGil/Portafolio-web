@@ -1,5 +1,5 @@
 import { useI18n } from '../context/I18nContext'
-import { FiGithub, FiHeart } from 'react-icons/fi'
+import { FiGithub } from 'react-icons/fi'
 
 export default function Footer() {
   const { t } = useI18n()
@@ -10,9 +10,6 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 dark:text-gray-500 text-sm">
         <p>
           &copy; {year} Iosef Suárez Gil. {t('footer.copyright')}.
-        </p>
-        <p className="flex items-center gap-1">
-          {t('footer.madeWith')} <FiHeart className="text-red-400" /> con React & Tailwind
         </p>
         <div className="flex gap-4">
           <a
