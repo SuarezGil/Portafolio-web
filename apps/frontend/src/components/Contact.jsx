@@ -2,8 +2,6 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi'
-import emailjs from '@emailjs/browser'
-import { EMAILJS_CONFIG } from '../config/emailjs'
 
 export default function Contact() {
   const { t } = useI18n()
@@ -19,18 +17,13 @@ export default function Contact() {
     setStatus('sending')
 
     try {
-      const result = await emailjs.send(
-        EMAILJS_CONFIG.SERVICE_ID,
-        EMAILJS_CONFIG.TEMPLATE_ID,
-        {
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
-          to_name: 'Iosef',
-        },
-        EMAILJS_CONFIG.PUBLIC_KEY,
-      )
-      if (result.status === 200) {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (response.ok) {
         setStatus('success')
         setForm({ name: '', email: '', message: '' })
       } else {
