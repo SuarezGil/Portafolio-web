@@ -1,6 +1,6 @@
-import nodemailer from 'nodemailer'
+const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email'
 
-const requiredVars = ['SMTP_HOST', 'SMTP_PORT', 'SMTP_USER', 'SMTP_PASS']
+const requiredVars = ['BREVO_API_KEY', 'MAIL_FROM']
 const missing = requiredVars.filter((key) => !process.env[key])
 
 if (missing.length > 0) {
@@ -10,14 +10,31 @@ if (missing.length > 0) {
   )
 }
 
-export const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT) || 587,
-  secure: process.env.SMTP_SECURE === 'true',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-})
+export const MAIL_FROM = process.env.MAIL_FROM
+export const MAIL_FROM_NAME = process.env.MAIL_FROM_NAME || 'Portafolio'
 
-export const MAIL_FROM = process.env.MAIL_FROM || process.env.SMTP_USER
+export async function sendMail({ to, replyTo, subject, text, html }) {
+  const response = await fetch(BREVO_API_URL, {
+    method: 'POST',
+    headers: {
+      'api-key': process.env.BREVO_API_KEY,
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify({
+      sender: { name: MAIL_FROM_NAME, email: MAIL_FROM },
+      to: [{ email: to }],
+      ...(replyTo ? { replyTo: { email: replyTo } } : {}),
+      subject,
+      textContent: text,
+      htmlContent: html,
+    }),
+  })
+
+  if (!response.ok) {
+    const body = await response.text().catch(() => '')
+    throw new Error(`Brevo API respondió ${response.status}: ${body}`)
+  }
+
+  return response.json()
+}

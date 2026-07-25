@@ -7,16 +7,25 @@ Servicio Express que recibe el formulario de contacto del frontend y lo envía p
 
 ## Configuración
 
-1. Copia `.env.example` a `.env` y completa las variables SMTP:
+El envío de correo usa la [API HTTP de Brevo](https://developers.brevo.com/reference/sendtransacemail)
+(no SMTP), para evitar bloqueos de puertos SMTP salientes en hostings como Railway o Vercel.
+
+1. Copia `.env.example` a `.env`:
 
    ```bash
    cp .env.example .env
    ```
 
-2. Con Gmail: activa verificación en dos pasos y genera una "contraseña de aplicación" en
-   https://myaccount.google.com/apppasswords. Usa esa contraseña de 16 caracteres como `SMTP_PASS`.
+2. Crea una cuenta en https://app.brevo.com, verifica un remitente en
+   **Settings → Senders, Domains & Dedicated IPs** y genera una API key en
+   **Settings → SMTP & API → API Keys**.
 
-3. Instala dependencias y arranca:
+3. Completa en `.env`:
+   - `BREVO_API_KEY`: la API key generada.
+   - `MAIL_FROM`: el correo verificado como remitente en Brevo.
+   - `OWNER_EMAIL`: a dónde llegan los mensajes del formulario.
+
+4. Instala dependencias y arranca:
 
    ```bash
    pnpm install

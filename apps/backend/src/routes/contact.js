@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { transporter, MAIL_FROM } from '../mailer.js'
+import { sendMail } from '../mailer.js'
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const OWNER_EMAIL = process.env.OWNER_EMAIL
@@ -23,8 +23,7 @@ router.post('/contact', async (req, res) => {
   }
 
   try {
-    await transporter.sendMail({
-      from: MAIL_FROM,
+    await sendMail({
       to: OWNER_EMAIL,
       replyTo: email,
       subject: `Nuevo mensaje de contacto de ${name}`,
