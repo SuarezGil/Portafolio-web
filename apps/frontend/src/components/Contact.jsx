@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
-import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi'
+import { FiMail, FiPhone, FiMapPin, FiSend, FiLinkedin } from 'react-icons/fi'
 
 export default function Contact() {
   const { t } = useI18n()
@@ -147,6 +147,15 @@ export default function Contact() {
               <FiMapPin className="text-sky-400 shrink-0" />
               <span>{t('contact.info.location')}</span>
             </div>
+            <a
+              href="https://www.linkedin.com/in/iosef-suarez-662020367/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-sky-400 transition"
+            >
+              <FiLinkedin className="text-sky-400 shrink-0" />
+              <span>{t('contact.info.linkedin')}</span>
+            </a>
           </div>
         </motion.div>
       </div>

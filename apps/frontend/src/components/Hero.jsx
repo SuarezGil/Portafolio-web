@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { useI18n } from '../context/I18nContext'
 import { useNavigate } from 'react-router-dom'
-import { FiGithub, FiDownload, FiChevronDown, FiExternalLink } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiDownload, FiChevronDown, FiExternalLink } from 'react-icons/fi'
 import cv from '../assets/CURRICULUM IOSEF SUAREZ GIL 2026.pdf'
 
 function TypeWriter({ words, className }) {
@@ -103,7 +103,10 @@ function Hero() {
           transition={{ duration: 1, delay: 1.5 }}
           className="flex items-center justify-center gap-4 mt-8"
         >
-          <a href="https://github.com/SuarezGil" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-sky-400 transition">
+          <a href="https://www.linkedin.com/in/iosef-suarez-662020367/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-sky-400 transition" aria-label="LinkedIn">
+            <FiLinkedin size={20} />
+          </a>
+          <a href="https://github.com/SuarezGil" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-sky-400 transition" aria-label="GitHub">
             <FiGithub size={20} />
           </a>
         </motion.div>

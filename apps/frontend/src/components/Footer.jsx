@@ -1,5 +1,5 @@
 import { useI18n } from '../context/I18nContext'
-import { FiGithub } from 'react-icons/fi'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
 
 export default function Footer() {
   const { t } = useI18n()
@@ -12,6 +12,15 @@ export default function Footer() {
           &copy; {year} Iosef Suárez Gil. {t('footer.copyright')}.
         </p>
         <div className="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/iosef-suarez-662020367/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-sky-400 transition"
+            aria-label="LinkedIn"
+          >
+            <FiLinkedin size={20} />
+          </a>
           <a
             href="https://github.com/SuarezGil"
             target="_blank"
