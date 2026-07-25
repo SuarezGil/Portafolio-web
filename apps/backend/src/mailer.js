@@ -16,6 +16,7 @@ export const MAIL_FROM_NAME = process.env.MAIL_FROM_NAME || 'Portafolio'
 export async function sendMail({ to, replyTo, subject, text, html }) {
   const response = await fetch(BREVO_API_URL, {
     method: 'POST',
+    signal: AbortSignal.timeout(10_000),
     headers: {
       'api-key': process.env.BREVO_API_KEY,
       'Content-Type': 'application/json',
