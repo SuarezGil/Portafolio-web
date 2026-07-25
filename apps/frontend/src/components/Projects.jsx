@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
-import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import { FiExternalLink, FiGithub, FiImage } from 'react-icons/fi'
 
 const container = {
   hidden: {},
@@ -39,6 +39,18 @@ export default function Projects() {
             variants={item}
             className="bg-gray-50 dark:bg-white/5 backdrop-blur-md border border-gray-200 dark:border-white/10 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300 group"
           >
+            <div className="aspect-video rounded-xl overflow-hidden mb-5 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 flex items-center justify-center">
+              {proj.image ? (
+                <img
+                  src={proj.image}
+                  alt={proj.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <FiImage className="text-4xl text-gray-300 dark:text-gray-600" />
+              )}
+            </div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-sky-400 transition-colors">
               {proj.title}
             </h3>

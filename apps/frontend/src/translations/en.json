@@ -7,14 +7,14 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Iosef",
-    "subtitle": "Full Stack Developer",
+    "subtitle": "Junior Developer",
     "roles": ["Junior Developer", "Learning React", "Exploring Node.js", "Tech enthusiast"],
     "cv": "View Resume",
     "contact": "Contact"
   },
   "about": {
     "title": "About Me",
-    "bio1": "My name is Iosef Suárez Gil, I'm a Full Stack web developer and graduate of 6th grade Computer Science. I specialize in building modern web applications using React, Node.js, Express and MongoDB.",
+    "bio1": "My name is Iosef Suárez Gil, I'm a Junior web developer and graduate of 6th grade Computer Science. I specialize in building modern web applications using React, Node.js, Express and MongoDB.",
     "bio2": "Since I started programming, I've been passionate about solving problems and building digital experiences that make a difference. Every project is an opportunity to learn something new and push my own limits.",
     "bio3": "I'm constantly learning, exploring new technologies and looking for challenges that help me grow as a developer. My goal is to deliver real, quality solutions to every project I work on.",
     "techTitle": "Technologies",
@@ -65,31 +65,43 @@
         "title": "Client-admin",
         "desc": "Complete admin panel for managing sports fields, reservations, tournaments and teams. Includes React + Tailwind frontend and Node.js + .NET backend.",
         "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
-        "url": "https://github.com/SuarezGil/Client-admin"
+        "url": "https://github.com/SuarezGil/Client-admin",
+        "image": ""
       },
       {
         "title": "client-user",
         "desc": "React Native (Expo) mobile app for Kinal Sport users, with authentication, navigation, and integrated backend services.",
         "tags": ["React Native", "Expo", "Node.js", ".NET"],
-        "url": "https://github.com/SuarezGil/client-user"
-      },
-      {
-        "title": "GestorDeOpiniones",
-        "desc": "REST API for managing publications and comments with JWT authentication, Cloudinary file uploads and MongoDB database.",
-        "tags": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
-        "url": "https://github.com/SuarezGil/GestorDeOpiniones"
+        "url": "https://github.com/SuarezGil/client-user",
+        "image": ""
       },
       {
         "title": "frontDivisas",
         "desc": "Minimal currency converter built with React and Vite, consuming an external exchange rate API.",
         "tags": ["React", "Vite", "JavaScript"],
-        "url": "https://github.com/SuarezGil/frontDivisas"
+        "url": "https://github.com/SuarezGil/frontDivisas",
+        "image": ""
       },
       {
         "title": "Portfolio Website",
         "desc": "Personal portfolio built with React, Tailwind CSS and Framer Motion, with responsive design, dark mode and bilingual support.",
         "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
-        "url": "https://github.com/SuarezGil/Portafolio-web"
+        "url": "https://github.com/SuarezGil/Portafolio-web",
+        "image": ""
+      },
+      {
+        "title": "Restaurant Manager",
+        "desc": "Team project: restaurant management system with reservations, tables, orders and promotions. I collaborated on the development, with a React web frontend and a React Native + Expo mobile app.",
+        "tags": ["React", "React Native", "Expo", "Node.js"],
+        "url": "https://github.com/Narizaico-code/GestorRestaurantes-Movil",
+        "image": ""
+      },
+      {
+        "title": "Banking Manager",
+        "desc": "Team project: banking management application with a web frontend and a mobile app. I collaborated on the development of the system.",
+        "tags": ["React", "React Native", "Node.js", "JWT"],
+        "url": "https://github.com/ValladaresCode/Bancario-Movil",
+        "image": ""
       }
     ]
   },

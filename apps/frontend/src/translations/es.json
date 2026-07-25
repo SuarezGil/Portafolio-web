@@ -7,14 +7,14 @@
   "hero": {
     "greeting": "Hola, soy",
     "name": "Iosef",
-    "subtitle": "Desarrollador Full Stack",
+    "subtitle": "Desarrollador Junior",
     "roles": ["Desarrollador Junior", "Aprendiendo React", "Explorando Node.js", "Apasionado por la tecnología"],
     "cv": "Ver Curriculum",
     "contact": "Contacto"
   },
   "about": {
     "title": "Sobre mí",
-    "bio1": "Mi nombre es Iosef Suárez Gil, soy desarrollador web Full Stack y graduado de 6to Perito en Informática. Me especializo en crear aplicaciones web modernas usando React, Node.js, Express y MongoDB.",
+    "bio1": "Mi nombre es Iosef Suárez Gil, soy desarrollador web Junior y graduado de 6to Perito en Informática. Me especializo en crear aplicaciones web modernas usando React, Node.js, Express y MongoDB.",
     "bio2": "Desde que empecé en el mundo de la programación, me apasiona resolver problemas y construir experiencias digitales que marquen la diferencia. Cada proyecto es una oportunidad para aprender algo nuevo y superar mis propios límites.",
     "bio3": "Actualmente sigo formándome constantemente, explorando nuevas tecnologías y buscando desafíos que me permitan crecer como desarrollador. Mi objetivo es aportar soluciones reales y de calidad a cada proyecto en el que participo.",
     "techTitle": "Tecnologías",
@@ -65,31 +65,43 @@
         "title": "Client-admin",
         "desc": "Panel de administración completo para gestión de canchas, reservas, torneos y equipos deportivos. Incluye frontend con React + Tailwind y backend con Node.js y .NET.",
         "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
-        "url": "https://github.com/SuarezGil/Client-admin"
+        "url": "https://github.com/SuarezGil/Client-admin",
+        "image": ""
       },
       {
         "title": "client-user",
         "desc": "App móvil en React Native (Expo) para usuarios de Kinal Sport, con autenticación, navegación y servicios backend integrados.",
         "tags": ["React Native", "Expo", "Node.js", ".NET"],
-        "url": "https://github.com/SuarezGil/client-user"
-      },
-      {
-        "title": "GestorDeOpiniones",
-        "desc": "API REST para gestión de publicaciones y comentarios con autenticación JWT, subida de archivos a Cloudinary y base de datos MongoDB.",
-        "tags": ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
-        "url": "https://github.com/SuarezGil/GestorDeOpiniones"
+        "url": "https://github.com/SuarezGil/client-user",
+        "image": ""
       },
       {
         "title": "frontDivisas",
         "desc": "Conversor de divisas minimalista construido con React y Vite, consumiendo API externa de tasas de cambio.",
         "tags": ["React", "Vite", "JavaScript"],
-        "url": "https://github.com/SuarezGil/frontDivisas"
+        "url": "https://github.com/SuarezGil/frontDivisas",
+        "image": ""
       },
       {
         "title": "Portafolio Web",
         "desc": "Este portafolio personal construido con React, Tailwind CSS y Framer Motion, con diseño responsive, modo oscuro y bilingüe.",
         "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
-        "url": "https://github.com/SuarezGil/Portafolio-web"
+        "url": "https://github.com/SuarezGil/Portafolio-web",
+        "image": ""
+      },
+      {
+        "title": "Gestor de Restaurantes",
+        "desc": "Proyecto en equipo: sistema de gestión de restaurantes con reservas, mesas, pedidos y promociones. Colaboré en el desarrollo, con frontend web en React y app móvil en React Native + Expo.",
+        "tags": ["React", "React Native", "Expo", "Node.js"],
+        "url": "https://github.com/Narizaico-code/GestorRestaurantes-Movil",
+        "image": ""
+      },
+      {
+        "title": "Gestor Bancario",
+        "desc": "Proyecto en equipo: aplicación de gestión bancaria con frontend web y app móvil. Colaboré en el desarrollo del sistema.",
+        "tags": ["React", "React Native", "Node.js", "JWT"],
+        "url": "https://github.com/ValladaresCode/Bancario-Movil",
+        "image": ""
       }
     ]
   },
