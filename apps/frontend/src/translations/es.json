@@ -85,14 +85,6 @@
         "image": ""
       },
       {
-        "title": "Portafolio Web",
-        "desc": "Este portafolio personal construido con React, Tailwind CSS y Framer Motion, con diseño responsive, modo oscuro y bilingüe.",
-        "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
-        "url": "https://github.com/SuarezGil/Portafolio-web",
-        "demoUrl": "https://portafolio-web-frontend-iota.vercel.app/",
-        "image": ""
-      },
-      {
         "title": "Gestor de Restaurantes",
         "desc": "Proyecto en equipo: sistema de gestión de restaurantes con reservas, mesas, pedidos y promociones. Colaboré en el desarrollo, con frontend web en React y app móvil en React Native + Expo.",
         "tags": ["React", "React Native", "Expo", "Node.js"],
