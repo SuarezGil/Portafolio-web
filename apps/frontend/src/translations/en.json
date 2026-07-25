@@ -92,7 +92,7 @@
         "desc": "Team project: barbershop management system with appointment booking and service administration. I collaborated on the development of the system.",
         "tags": ["React", "Node.js", "JWT"],
         "url": "https://github.com/ZimriJahdai/HaircutFiveFriends-Full",
-        "image": "/projects/haircut-five-friends.jpg"
+        "images": ["/projects/haircut-five-friends.jpg", "/projects/haircut-five-friends-login.jpg"]
       }
     ]
   },
