@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useI18n } from '../context/I18nContext'
 import { useNavigate } from 'react-router-dom'
 import { FiGithub, FiLinkedin, FiDownload, FiChevronDown, FiExternalLink } from 'react-icons/fi'
-import cv from '../assets/CURRICULUM IOSEF SUAREZ GIL 2026.pdf'
+import cv from '../assets/CV IOSEF SUAREZ GIL 2026.pdf'
 
 function TypeWriter({ words, className }) {
   const [text, setText] = useState('')

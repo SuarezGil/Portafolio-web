@@ -1,5 +1,5 @@
 import Foto from '../assets/yo.jpg'
-import cv from '../assets/CURRICULUM IOSEF SUAREZ GIL 2026.pdf'
+import cv from '../assets/CV IOSEF SUAREZ GIL 2026.pdf'
 import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
 import { FiDownload } from 'react-icons/fi'
