@@ -89,6 +89,7 @@
         "desc": "Personal portfolio built with React, Tailwind CSS and Framer Motion, with responsive design, dark mode and bilingual support.",
         "tags": ["React", "Tailwind", "Framer Motion", "Vite"],
         "url": "https://github.com/SuarezGil/Portafolio-web",
+        "demoUrl": "https://portafolio-web-frontend-iota.vercel.app/",
         "image": ""
       },
       {
@@ -96,14 +97,16 @@
         "desc": "Team project: restaurant management system with reservations, tables, orders and promotions. I collaborated on the development, with a React web frontend and a React Native + Expo mobile app.",
         "tags": ["React", "React Native", "Expo", "Node.js"],
         "url": "https://github.com/Narizaico-code/GestorRestaurantes-Movil",
-        "image": ""
+        "demoUrl": "https://gestor-restaurantes-frontend.vercel.app/",
+        "image": "/projects/gestor-restaurantes.png"
       },
       {
         "title": "Banking Manager",
         "desc": "Team project: banking management application with a web frontend and a mobile app. I collaborated on the development of the system.",
         "tags": ["React", "React Native", "Node.js", "JWT"],
         "url": "https://github.com/ValladaresCode/Bancario-Movil",
-        "image": ""
+        "demoUrl": "https://gestor-bancario-frontend-six.vercel.app/",
+        "image": "/projects/gestor-bancario.png"
       }
     ]
   },

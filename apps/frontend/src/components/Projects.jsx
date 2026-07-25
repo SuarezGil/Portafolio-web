@@ -58,14 +58,16 @@ export default function Projects() {
               {proj.desc}
             </p>
             <div className="flex gap-4">
-              <a
-                href={proj.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-sky-400 hover:text-sky-300 transition"
-              >
-                <FiExternalLink /> {t('projects.viewProject')}
-              </a>
+              {proj.demoUrl && (
+                <a
+                  href={proj.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-sky-400 hover:text-sky-300 transition"
+                >
+                  <FiExternalLink /> {t('projects.viewProject')}
+                </a>
+              )}
               <a
                 href={proj.url}
                 target="_blank"
