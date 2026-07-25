@@ -2,7 +2,9 @@
   "nav": {
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "menu": "Abrir menú",
+    "close": "Cerrar menú"
   },
   "hero": {
     "greeting": "Hola, soy",
