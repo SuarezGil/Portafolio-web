@@ -64,20 +64,6 @@
     "viewCode": "Code",
     "items": [
       {
-        "title": "Client-admin",
-        "desc": "Complete admin panel for managing sports fields, reservations, tournaments and teams. Includes React + Tailwind frontend and Node.js + .NET backend.",
-        "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
-        "url": "https://github.com/SuarezGil/Client-admin",
-        "image": ""
-      },
-      {
-        "title": "client-user",
-        "desc": "React Native (Expo) mobile app for Kinal Sport users, with authentication, navigation, and integrated backend services.",
-        "tags": ["React Native", "Expo", "Node.js", ".NET"],
-        "url": "https://github.com/SuarezGil/client-user",
-        "image": ""
-      },
-      {
         "title": "frontDivisas",
         "desc": "Minimal currency converter built with React and Vite, consuming an external exchange rate API.",
         "tags": ["React", "Vite", "JavaScript"],
@@ -100,6 +86,13 @@
         "url": "https://github.com/ValladaresCode/Bancario-Movil",
         "demoUrl": "https://gestor-bancario-frontend-six.vercel.app/",
         "image": "/projects/gestor-bancario.png"
+      },
+      {
+        "title": "Haircut Five Friends",
+        "desc": "Team project: barbershop management system with appointment booking and service administration. I collaborated on the development of the system.",
+        "tags": ["React", "Node.js", "JWT"],
+        "url": "https://github.com/ZimriJahdai/HaircutFiveFriends-Full",
+        "image": ""
       }
     ]
   },

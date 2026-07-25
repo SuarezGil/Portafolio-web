@@ -64,20 +64,6 @@
     "viewCode": "Código",
     "items": [
       {
-        "title": "Client-admin",
-        "desc": "Panel de administración completo para gestión de canchas, reservas, torneos y equipos deportivos. Incluye frontend con React + Tailwind y backend con Node.js y .NET.",
-        "tags": ["React", "Tailwind", "Node.js", ".NET", "MongoDB"],
-        "url": "https://github.com/SuarezGil/Client-admin",
-        "image": ""
-      },
-      {
-        "title": "client-user",
-        "desc": "App móvil en React Native (Expo) para usuarios de Kinal Sport, con autenticación, navegación y servicios backend integrados.",
-        "tags": ["React Native", "Expo", "Node.js", ".NET"],
-        "url": "https://github.com/SuarezGil/client-user",
-        "image": ""
-      },
-      {
         "title": "frontDivisas",
         "desc": "Conversor de divisas minimalista construido con React y Vite, consumiendo API externa de tasas de cambio.",
         "tags": ["React", "Vite", "JavaScript"],
@@ -100,6 +86,13 @@
         "url": "https://github.com/ValladaresCode/Bancario-Movil",
         "demoUrl": "https://gestor-bancario-frontend-six.vercel.app/",
         "image": "/projects/gestor-bancario.png"
+      },
+      {
+        "title": "Haircut Five Friends",
+        "desc": "Proyecto en equipo: sistema de gestión para barbería con reservas de citas y administración de servicios. Colaboré en el desarrollo del sistema.",
+        "tags": ["React", "Node.js", "JWT"],
+        "url": "https://github.com/ZimriJahdai/HaircutFiveFriends-Full",
+        "image": ""
       }
     ]
   },
