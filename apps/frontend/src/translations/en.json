@@ -82,7 +82,8 @@
         "desc": "Minimal currency converter built with React and Vite, consuming an external exchange rate API.",
         "tags": ["React", "Vite", "JavaScript"],
         "url": "https://github.com/SuarezGil/frontDivisas",
-        "image": ""
+        "demoUrl": "https://front-divisas-pi.vercel.app/",
+        "image": "/projects/frontdivisas.png"
       },
       {
         "title": "Restaurant Manager",

@@ -82,7 +82,8 @@
         "desc": "Conversor de divisas minimalista construido con React y Vite, consumiendo API externa de tasas de cambio.",
         "tags": ["React", "Vite", "JavaScript"],
         "url": "https://github.com/SuarezGil/frontDivisas",
-        "image": ""
+        "demoUrl": "https://front-divisas-pi.vercel.app/",
+        "image": "/projects/frontdivisas.png"
       },
       {
         "title": "Gestor de Restaurantes",
