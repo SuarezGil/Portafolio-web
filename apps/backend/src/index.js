@@ -5,6 +5,7 @@ import { rateLimit } from 'express-rate-limit'
 import contactRouter from './routes/contact.js'
 
 const app = express()
+app.set('trust proxy', 1)
 const PORT = process.env.PORT || 4000
 const CLIENT_ORIGINS = (process.env.CLIENT_ORIGIN || 'http://localhost:5173')
   .split(',')
