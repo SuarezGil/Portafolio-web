@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
 import { FiMail, FiPhone, FiMapPin, FiSend, FiLinkedin } from 'react-icons/fi'
 
-const API_URL = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
+const API_URL = (
+  import.meta.env.VITE_API_URL || 'https://portafolio-backend-1uv6.onrender.com/api'
+).replace(/\/$/, '')
 
 export default function Contact() {
   const { t } = useI18n()
