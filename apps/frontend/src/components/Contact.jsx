@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { useI18n } from '../context/I18nContext'
 import { FiMail, FiPhone, FiMapPin, FiSend, FiLinkedin } from 'react-icons/fi'
 
+const API_URL = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
+
 export default function Contact() {
   const { t } = useI18n()
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -17,7 +19,7 @@ export default function Contact() {
     setStatus('sending')
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/contact`, {
+      const response = await fetch(`${API_URL}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

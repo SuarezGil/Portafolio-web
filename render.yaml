@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: portafolio-backend
+    runtime: docker
+    rootDir: apps/backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: MAIL_FROM_NAME
+        value: Portafolio
+      - key: OWNER_EMAIL
+        sync: false

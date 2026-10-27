@@ -36,6 +36,33 @@ El envío de correo usa la [API HTTP de Brevo](https://developers.brevo.com/refe
 
 ## Despliegue
 
+### Render
+
+El repositorio incluye un `render.yaml` en la raíz para crear este backend como un Web Service
+Docker. En Render, usa **New → Blueprint** y selecciona este repositorio. El Blueprint configura
+`apps/backend` como directorio raíz, usa el `Dockerfile` existente y comprueba
+`/api/health` después de cada despliegue.
+
+Completa estas variables cuando Render las solicite:
+
+```env
+CLIENT_ORIGIN=https://tu-frontend.vercel.app
+BREVO_API_KEY=...
+MAIL_FROM=remitente-verificado-en-brevo.com
+OWNER_EMAIL=tu-correo@dominio.com
+```
+
+`MAIL_FROM` debe ser un remitente verificado en Brevo. Después del primer despliegue, comprueba
+`https://tu-backend.onrender.com/api/health` y configura esta URL en Vercel como variable de
+build:
+
+```env
+VITE_API_URL=https://tu-backend.onrender.com/api
+```
+
+Vuelve a desplegar el frontend después de cambiar `VITE_API_URL`, porque Vite incorpora las
+variables `VITE_*` durante el build.
+
 Este servicio se construye y despliega de forma independiente:
 
 ```bash
